@@ -1,0 +1,34 @@
+[
+  {
+    "Name": "Geroge Orwell",
+    "Price": 1999,
+    "Author": "Jos\u00E9 Weslley ",
+    "Quantity": 0,
+    "RegistrationDate": null,
+    "Freight": null
+  },
+  {
+    "Name": "Carrinho ",
+    "Price": 19.50,
+    "Author": null,
+    "Quantity": 0,
+    "RegistrationDate": null,
+    "Freight": 20
+  },
+  {
+    "Name": "lol",
+    "Price": 3,
+    "Author": "nn",
+    "Quantity": 0,
+    "RegistrationDate": null,
+    "Freight": null
+  },
+  {
+    "Name": "1984",
+    "Price": 19.99,
+    "Author": "Geroge Orwell",
+    "Quantity": 0,
+    "RegistrationDate": null,
+    "Freight": null
+  }
+]

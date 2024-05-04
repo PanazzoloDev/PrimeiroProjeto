@@ -1,0 +1,14 @@
+/Users/Wes/novo teste/bin/Debug/net8.0/novo teste
+/Users/Wes/novo teste/bin/Debug/net8.0/novo teste.deps.json
+/Users/Wes/novo teste/bin/Debug/net8.0/novo teste.runtimeconfig.json
+/Users/Wes/novo teste/bin/Debug/net8.0/novo teste.dll
+/Users/Wes/novo teste/bin/Debug/net8.0/novo teste.pdb
+/Users/Wes/novo teste/obj/Debug/net8.0/novo teste.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Wes/novo teste/obj/Debug/net8.0/novo teste.AssemblyInfoInputs.cache
+/Users/Wes/novo teste/obj/Debug/net8.0/novo teste.AssemblyInfo.cs
+/Users/Wes/novo teste/obj/Debug/net8.0/novo teste.csproj.CoreCompileInputs.cache
+/Users/Wes/novo teste/obj/Debug/net8.0/novo teste.dll
+/Users/Wes/novo teste/obj/Debug/net8.0/refint/novo teste.dll
+/Users/Wes/novo teste/obj/Debug/net8.0/novo teste.pdb
+/Users/Wes/novo teste/obj/Debug/net8.0/novo teste.genruntimeconfig.cache
+/Users/Wes/novo teste/obj/Debug/net8.0/ref/novo teste.dll
