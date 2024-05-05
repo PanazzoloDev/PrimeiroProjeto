@@ -1,0 +1,17 @@
+/Users/Wes/remake/bin/Debug/net8.0/remake
+/Users/Wes/remake/bin/Debug/net8.0/remake.deps.json
+/Users/Wes/remake/bin/Debug/net8.0/remake.runtimeconfig.json
+/Users/Wes/remake/bin/Debug/net8.0/remake.dll
+/Users/Wes/remake/bin/Debug/net8.0/remake.pdb
+/Users/Wes/remake/obj/Debug/net8.0/remake.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Wes/remake/obj/Debug/net8.0/remake.AssemblyInfoInputs.cache
+/Users/Wes/remake/obj/Debug/net8.0/remake.AssemblyInfo.cs
+/Users/Wes/remake/obj/Debug/net8.0/remake.csproj.CoreCompileInputs.cache
+/Users/Wes/remake/obj/Debug/net8.0/remake.dll
+/Users/Wes/remake/obj/Debug/net8.0/refint/remake.dll
+/Users/Wes/remake/obj/Debug/net8.0/remake.pdb
+/Users/Wes/remake/obj/Debug/net8.0/remake.genruntimeconfig.cache
+/Users/Wes/remake/obj/Debug/net8.0/ref/remake.dll
+/Users/Wes/remake/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/Wes/remake/obj/Debug/net8.0/remake.csproj.AssemblyReference.cache
+/Users/Wes/remake/obj/Debug/net8.0/remake.csproj.Up2Date

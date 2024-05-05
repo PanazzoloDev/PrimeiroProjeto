@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "8kllDyU1sJCzW5Jw1HJhJWGUOM7kWQ7RfWeF8p+p7SH8bHqwj1HgtIYaiKMWO2dhjUmQ+MYhSq890hQ3ecuU2A==",
+  "success": true,
+  "projectFilePath": "/Users/Wes/remake/remake.csproj",
+  "expectedPackageFiles": [
+    "/Users/Wes/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
