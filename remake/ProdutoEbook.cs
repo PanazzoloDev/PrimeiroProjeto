@@ -35,7 +35,7 @@ public class ProdutoEbook : Produto, IEstoque
     }
     public void AdicionarSaida()
     {
-        Console.WriteLine($"Adionar venda no Ebook: {Nome}");
+        Console.WriteLine($"Adicionar venda no Ebook: {Nome}");
         Console.WriteLine($"Digite a quantidade Vendida");
         int Entrada = int.Parse(Console.ReadLine());
         Venda += Entrada;
