@@ -1,6 +1,5 @@
-using System.Diagnostics.Contracts;
 
-[System.Serializable]
+[Serializable]
 public abstract class Produto
 {
     private string nome;
@@ -23,18 +22,5 @@ public abstract class Produto
     {
         get {return quantidade;}
         set {quantidade = value;}
-    }
-
-    public virtual void Exibir()
-    {
-        throw new NotImplementedException();
-    }
-    public virtual void AdicionarEntrada()
-    {
-        throw new NotImplementedException();
-    }
-    public virtual void AdicionarSaida()
-    {
-        throw new NotImplementedException();
     }
 }

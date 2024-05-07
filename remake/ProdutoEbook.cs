@@ -21,7 +21,7 @@ public class ProdutoEbook : Produto, IEstoque
        this.Autor = autor;
     }
 
-    public override void Exibir()
+    public void Exibir()
     {
         Console.WriteLine($"Nome do curso; {Nome}");
         Console.WriteLine($"Preço do curso; {Preco}");

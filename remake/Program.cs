@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Runtime.CompilerServices;
-using System.Text.Json;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json;
+using remake.Enums;
 
 namespace Gestor
 {
     static class Program
     {
         static List<IEstoque> produtos = new List<IEstoque>();
-        enum Menu {Listar=1, Adicionar, Remover, Entrada, Saida, Sair}
-        enum MenuProd {Fisico =1, Ebook, Curso, Sair}
+
         static void Main(string[]args)
         {
             Carregar();
@@ -21,29 +15,36 @@ namespace Gestor
             {
                 Console.WriteLine("Gestor de estoque");
                 Console.WriteLine ("[1] Listar\n[2] Adicionar\n[3] Remover\n[4] Adicionar entrada\n[5] Adicionar saida\n[6] Sair");
-                int OpcInt = int.Parse(Console.ReadLine());
-                Menu OpcMenu = (Menu)OpcInt;
+
+                if (!int.TryParse(Console.ReadLine(), out int OpcInt ))
+                {
+                    Console.WriteLine("Opção Invalida");
+                    Thread.Sleep(2000);
+                    Console.Clear();
+                }
+
+                MenuOptionsEnum OpcMenu = (MenuOptionsEnum)OpcInt;
 
                 if (OpcInt > 0 && OpcInt< 7)
                 {
-                     switch (OpcMenu)
+                    switch (OpcMenu)
                     {
-                        case Menu.Listar:
+                        case MenuOptionsEnum.Listar:
                             Listagem();
                             break;
-                        case Menu.Adicionar:
+                        case MenuOptionsEnum.Adicionar:
                             Adicionar();
                             break;
-                        case Menu.Remover:
+                        case MenuOptionsEnum.Remover:
                             Remover();
                             break;
-                        case Menu.Entrada:
+                        case MenuOptionsEnum.Entrada:
                             AdicionarEntrada();
                             break;
-                        case Menu.Saida:
-                        AdicionarSaida();
+                        case MenuOptionsEnum.Saida:
+                            AdicionarSaida();
                             break;
-                        case Menu.Sair:
+                        case MenuOptionsEnum.Sair:
                             EscolheuSair = true;
                             break;
                     }
@@ -76,23 +77,30 @@ namespace Gestor
                 {
                     Console.WriteLine("Menu de Registro");
                     Console.WriteLine("[1] Adicionar Produto Fisico\n[2] Adicionar Ebook\n[3] Adicionar Curso\n[4] Sair");
-                    int OpcInt = int.Parse(Console.ReadLine());
-                    MenuProd Opcmenu = (MenuProd)OpcInt;
+                    
+                    if (!int.TryParse(Console.ReadLine(), out int OpcInt ))
+                    {
+                        Console.WriteLine("Opção Invalida");
+                        Thread.Sleep(2000);
+                        Console.Clear();
+                    }
+
+                    ProductTypeEnum Opcmenu = (ProductTypeEnum)OpcInt;
                     
                     if (OpcInt >0 && OpcInt < 5)
                     {
                         switch (Opcmenu)
                         {
-                            case MenuProd.Fisico:
+                            case ProductTypeEnum.Fisico:
                                 CadastrarPFisico();
                                 break;
-                            case MenuProd.Ebook:
+                            case ProductTypeEnum.Ebook:
                                 CadastrarPEbook();
                                 break;
-                            case MenuProd.Curso:
+                            case ProductTypeEnum.Curso:
                                 CadastrarPCurso();
                                 break;
-                            case MenuProd.Sair:
+                            case ProductTypeEnum.Sair:
                                 EscolheuSair= true;
                             break;
                         }
@@ -125,7 +133,9 @@ namespace Gestor
                     Console.WriteLine ("Cadastrando Produto em Ebook");
                     Console.WriteLine("Digite o nome do Produto");
                     string nome = Console.ReadLine();
+                    Console.WriteLine("Digite o preço do produto"); // inserido!
                     decimal preco = decimal.Parse(Console.ReadLine());
+                    Console.WriteLine("Digite o nome do autor"); // inserido!                    
                     string autor = Console.ReadLine();
                     ProdutoEbook PE = new ProdutoEbook(nome,preco,autor);
                     produtos.Add(PE);

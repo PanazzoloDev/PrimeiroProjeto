@@ -21,7 +21,7 @@ public class ProdutoFisico : Produto, IEstoque
         this.Frete = frete;
     }
 
-    public override void Exibir()
+    public void Exibir()
     {
         Console.WriteLine($"Nome do Prodouto: {Nome}");
         Console.WriteLine($"Preço do Produto; {Preco}");

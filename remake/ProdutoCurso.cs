@@ -8,7 +8,6 @@ public class ProdutoCurso : Produto, IEstoque
         get{return vagas;}
         set{vagas = value;}
     }
-
     public string Autor
     {
         get{return autor;}
@@ -36,7 +35,7 @@ public class ProdutoCurso : Produto, IEstoque
         Console.WriteLine("Entrada Registrada");
         Console.ReadLine();
     }
-     public void AdicionarSaida()
+    public void AdicionarSaida()
     {
         Console.WriteLine($"Remover quantidade de vagas no curso: {Nome}");
         Console.WriteLine($"Digite a quantidade de vagas que foram obitidas por alunos");
